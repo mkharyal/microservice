@@ -19,6 +19,37 @@ The way you embrace mistakes and turn them into learning moments truly sets you 
 ├── PlatformService/     # Manages platform data
 ├── K8S/                 # Kubernetes manifests for deployment
 
+## 🛠️ Tech Stack & Architecture
+
+**Technology Stack:**
+- **Runtime**: .NET 10.0
+- **Service Communication**: 
+  - REST APIs (HTTP/JSON)
+  - gRPC for high-performance inter-service calls
+- **Message Broker**: RabbitMQ for asynchronous event-driven communication
+- **Database**: Microsoft SQL Server with Entity Framework Core ORM
+- **Containerization**: Docker for service packaging
+- **Orchestration**: Kubernetes for deployment and service management
+- **API Mapping**: AutoMapper for DTO transformations
+- **IPC Protocols**: Protocol Buffers (Protobuf) for gRPC message definitions
+
+**Non-Functional Requirements & Design Goals:**
+- **Scalability**: Horizontally scalable microservices deployable as Kubernetes pods
+- **Loose Coupling**: Services communicate asynchronously via message queues to minimize dependencies
+- **High Performance**: gRPC services for low-latency, high-throughput inter-service communication
+- **Resilience**: Containerized services with restart policies and health checks
+- **Cloud-Native**: Full Kubernetes support with declarative infrastructure manifests
+- **Asynchronous Processing**: Event-driven architecture using publish-subscribe patterns
+- **Data Isolation**: Each service maintains its own database following microservices principles
+
+**Architectural Limitations (By Design for Learning):**
+- No authentication/authorization mechanisms
+- No centralized logging or observability stack
+- Minimal error handling and validation
+- No automated CI/CD pipeline
+- No service mesh, API gateway, or rate limiting
+- Basic health checks without advanced monitoring
+
 ## 🧠 What This Project Demonstrates
 
 This project is designed to help understand real-world microservices concepts:
