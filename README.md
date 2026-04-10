@@ -119,7 +119,7 @@ If you are starting your journey into microservices, this is a great place to be
 
 A heartfelt thanks again to Les Jackson
 
-Your authenticity, humor, and teaching philosophy made this learning experience not just educational—but enjoyable.
+Your authenticity, humor, and teaching philosophy made this learning experience not just educational, but enjoyable.
 2. Build the projects.
 3. Deploy the Kubernetes manifests in `K8S/` if using a local cluster.
 
